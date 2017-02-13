@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name		Handy Image
-// @version		2015.09.17
+// @version		2017.02.09
 // @author		Owyn
 // @contributor	ubless607, bitst0rm
 // @namespace	handyimage
 // @description	Shows just fullsize Image with hotkeys & without pop-ups on many image-hosting sites
 // @updateURL	https://github.com/Owyn/HandyImage/raw/master/HandyImage.user.js
 // @downloadURL	https://github.com/Owyn/HandyImage/raw/master/HandyImage.user.js
-// @homepage	https://greasyfork.org/scripts/109-handy-image
-// @supportURL	https://greasyfork.org/scripts/109-handy-image/feedback
+// @homepage	https://sleazyfork.org/scripts/109-handy-image
+// @supportURL	https://sleazyfork.org/scripts/109-handy-image/feedback
 // @icon		http://i.imgur.com/Q5TTIjV.png
 // @run-at		document-start
 // @grant		GM_getValue
@@ -27,7 +27,7 @@
 // @match		http://imagepix.org/image*
 // @match		http://image2you.ru/*/*/
 // @match		http://imageban.ru/show*
-// @match		http://fastpic.ru/view*
+// @match		*://fastpic.ru/view*
 // @match		http://www.pixhost.org/show*
 // @match		http://*.picpicture.com/share.php?id=*
 // @match		http://*.pic5you.ru/*/*/
@@ -53,7 +53,8 @@
 // @match		http://*.xxxhost.me/view*
 // @match		http://*.imadul.com/?*
 // @match		http://*.d69.in/?*
-// @match		http://postimg.org/image*
+// @match		*://postimg.org/image/*
+// @match		*://postimg.cc/image/
 // @match		http://*.niceimage.pl/*.html
 // @match		http://*.picbank.pl/*.html
 // @match		http://*.pics-money.ru/*
@@ -159,7 +160,7 @@
 // @match		http://*.moyophoto.com/share-*
 // @match		http://www.imageboss.net/view*
 // @match		http://*.thebestpichost.com/picture/*
-// @match		http://*.lostpic.net/?photo=*
+// @match		http://*.lostpic.net/image/*
 // @match		http://subefotos.com/ver/*
 // @exclude		http://subefotos.com/ver/*#codigos
 // @match		http://*.seedimage.com/P/show*
@@ -220,7 +221,7 @@
 // @match		http://*.mypixxx.lonestarnaughtygirls.com/?*
 // @match		*://beeimg.com/view*
 // @match		http://www.noelshack.com/*.*
-// @match		http://www.zupmage.eu/image*
+// @match		http://www.turbopix.fr/v/*
 // @match		http://*.picstwist.com/img*
 // @match		http://thumbsnap.com/*
 // @match		http://*.deffe.com/image*
@@ -243,8 +244,8 @@
 // @match		http://*.xximg.net/img-*
 // @match		http://*.zaslike.com/view*
 // @match		http://www.zimagez.com/zimage*
-// @match		http://*.someimage.com/*
-// @exclude		http://*/someimage.com/compare/*
+// @match		https://*.someimage.com/*
+// @exclude		https://*/someimage.com/compare/*
 // @match		http://*.sexyxpixels.com/?v=*
 // @match		http://*.postimg.net/view*
 // @match		http://*.imagedomino.com/?v=*
@@ -556,7 +557,6 @@
 // @match		http://*.imageporter.com/*
 // @match		http://*.damimage.com/img-*
 // @match		http://fapping.empornium.sx/*
-// @match		http://*.imagehovel.com/view*
 // @match		http://*.imgfap.net/img-*
 // @match		http://*.img-zone.com/img-*
 // @match		http://*.bulkimg.info/img-*
@@ -583,8 +583,8 @@
 // @match		http://*.imgrex.com/view*
 // @match		http://www.amateri.cz/g*/*
 // @match		http://*.imgshow.me/*
-// @match		*://*.wikipedia.org/wiki/File:*.jp*
-// @match		*://*.wikipedia.org/wiki/File:*.png
+// @match		*://*.wikipedia.org/wiki/*:*.jp*
+// @match		*://*.wikipedia.org/wiki/*:*.png
 // @match		*://*.wikimedia.org/wiki/File:*.jp*
 // @match		*://*.wikimedia.org/wiki/File:*.pn*
 // @match		http://*.dragimage.org/img-*
@@ -624,7 +624,7 @@
 // @match		http://*.3xplanet.com/view*
 // @match		http://*.imgmega.com/*.html
 // @match		http://*.imgsee.me/*
-// @match		http://img.yt/img-*
+// @match		*://img.yt/img-*
 // @match		http://*.payforpic.ru/*/*/
 // @match		http://*.pic4cash.ru/*.html
 // @match		http://*.pic4cash.ru/full/
@@ -640,9 +640,9 @@
 // @match		http://*.imgpapa.com/img-*
 // @match		http://*.sexyimg.eu/img-*
 // @match		http://*.imglemon.com/img-*
-// @match		http://*.imgseeds.com/image/*
+// @match		*://*.imgseeds.com/img-*
 // @match		http://*.pronpic.org/*/*
-// @match		http://prntscr.com/*
+// @match		http://prnt.sc/*
 // @match		http://*.imgdream.net/view*
 // @match		http://*.imgtab.net/*
 // @match		http://*.madimage.org/img-*
@@ -651,7 +651,7 @@
 // @match		http://*.gifyu.com/image/*
 // @match		https://*.picr.ws/image/*
 // @match		https://www.linkmypic.com/image/*
-// @match		*://celebimg.com/2/image/*
+// @match		http://celebimg.com/image/*
 // @match		http://*.sharepic.org/image/*
 // @match		http://*.zuly.de/image/*
 // @match		http://upload.vstanced.com/image/*
@@ -681,7 +681,7 @@
 // @match		http://demo.chevereto.com/image/*
 // @match		http://*.ownimg.com/image/*
 // @match		http://*.6on9.com/img/*
-// @match		http://imgclick.net/*/*
+// @match		http://imgclick.net/*
 // @match		http://*.gogoimage.org/img-*
 // @match		http://imgmoney.ru/*.html
 // @match		http://imgmoney.ru/full/
@@ -712,6 +712,7 @@
 // @match		http://*.myceleb.net/u/v/?q=*
 // @match		http://*.imageblinks.com/img-*
 // @match		http://*.gelbooru.com/index.php?page=post&s=view&id=*
+// @match		http://*.youhate.us/index.php?page=post&s=view&id=*
 // @match		http://danbooru.donmai.us/posts/*
 // @match		http://konachan.com/post/show/*
 // @match		http://konachan.net/post/show/*
@@ -719,8 +720,7 @@
 // @match		https://chan.sankakucomplex.com/*post/show/*
 // @match		https://yande.re/post/show/*
 // @match		http://www.zerochan.net/*
-// @match		http://*.imgrock.net/*/*.html
-// @match		http://*.imagedoza.com/i.cc/i/*
+// @match		http://*.imgrock.net/*.php
 // @match		http://imgzap.com/view*
 // @match		http://*.funimg.net/img-*
 // @match		http://*.olivepix.com/view/*
@@ -760,15 +760,15 @@
 // @match		http://*.fixxpix.ru/*/*/
 // @match		http://*.imgclover.com/image/*
 // @match		http://*.imgz.pw/share-*
-// @match		http://*.imgking.co/img-*
+// @match		*://*.imgking.co/img*
 // @match		http://ask.fm/*/photo/original
 // @match		http://cuteimg.cc/*
 // @match		http://*.newimagepost.com/img-*
 // @match		http://*.imageho.me/img-*
 // @match		http://myimg.club/*
 // @match		http://*.imgease.re/img-*
-// @match		http://hotimage.uk/img-*
-// @match		http://imgview.net/*/*.html
+// @match		http://www.hotimage.uk/img-*
+// @match		http://imgview.net/*.php
 // @match		http://*.picsnova.net/img-*
 // @match		http://*.holdthemoan.net/x/share-*
 // @match		http://*.10.imageleon.com/i-*
@@ -784,7 +784,7 @@
 // @match		http://photo.weibo.com/*/large/photo_id/*
 // @match		http://*.crazyimg.com/images/*.html
 // @match		http://imgbe.com/img-*
-// @match		http://*.imgextra.uk/image/*
+// @match		https://*.imgextra.uk/image/*
 // @match		http://*.extraimago.com/image/*
 // @match		http://*.fireimg.cc/img-*
 // @match		http://www.pornimagex.com/image/*
@@ -800,8 +800,9 @@
 // @match		http://*.picangel.com/?p=*
 // @match		http://*.photolot.org/img-*
 // @match		http://*.pic-maniac.com/*
-// @match		https://instagram.com/p/*
+// @match		https://*.instagram.com/p/*
 // @exclude		https://instagram.com/p/*/embed/*
+// @exclude		https://*.instagram.com/p/*/embed/*
 // @match		http://*.picbee.pw/image/*
 // @match		http://*.imgglobe.eu/img-*
 // @match		http://*.imgsay.com/?v=*
@@ -810,6 +811,90 @@
 // @match		http://*.shareimgs.com/show*
 // @match		https://twitter.com/*/photo/*
 // @match		http://*.icezap.com/img-*
+// @match		http://*.imgtea.com/img-*
+// @match		*://*.imgsen.se/img-*
+// @match		*://*.rapidimg.net/img-*
+// @match		http://foxyimg.link/*
+// @match		*://*.imgflash.net/img-*
+// @match		http://*.sexyimagexxx.com/img-*
+// @match		http://*.imgtornado.com/img-*
+// @match		http://*.img-365.com/image/*
+// @match		http://*.imgbonk.com/image/*
+// @match		http://*.imageyo.ga/image/*
+// @match		http://*.daily-img.com/image/*
+// @match		http://*.imgcool.net/?*
+// @match		http://*.imageab.com/image/*
+// @match		http://*.erimge.com/img-*
+// @match		http://*.img-pay.com/img-*
+// @match		http://*.imgtrial.com/img-*
+// @match		http://imgtown.net/*.php
+// @match		http://ameblo.jp/*/image-*
+// @match		http://*.loftlm.ru/img-*
+// @match		http://*.imgmag.co/img-*
+// @match		http://*.imgdragon.com/*/*.html
+// @match		http://ftop.ru/*/*
+// @match		http://*.imgurx.net/share*
+// @match		http://savepic.ru/*.htm
+// @match		http://*.imgmaid.net/*
+// @match		http://*.imggold.org/*/*.html
+// @match		http://*.imgcredit.xyz/img-*
+// @match		http://*.dimtus.com/img-*
+// @match		http://*.coreimg.net/*
+// @match		http://sfwimg.com/image/*
+// @match		http://*.imgtiger.org/*/*
+// @match		http://*.lexiit.com/img-*
+// @match		http://*.img3x.com/image/*
+// @match		http://*.imguniversal.com/*
+// @match		http://*.imagepearl.com/view/*
+// @match		http://*.tinizo.com/img-*
+// @match		http://www.xxxsparrow.com/img-*
+// @match		http://*.imgkings.com/img*
+// @match		http://*.imagerar.com/img*
+// @match		http://*.sendpic.org/view/*
+// @match		http://*.imgzizi.xyz/img-*
+// @match		http://www.porncomix.info/*/*/
+// @exclude		http://www.porncomix.info/gallery/*
+// @match		http://*.imgclick.ru/*/*/
+// @match		http://*.svetmonet.ru/*.html
+// @match		http://*.svetmonet.ru/full/
+// @match		http://*.imgpix.net/*
+// @match		https://*.imgzulu.com/img-*
+// @match		http://*.freeimagehostin.com/img-*
+// @match		http://www.mixbase.net/gallery/image.*
+// @match		http://*.indiansex.xyz/images/image.html?gallery=*&image=*
+// @match		http://www.adultimages.xyz/*/image*.html
+// @match		http://*.pic4share.ru/*.html
+// @match		http://*.pic4share.ru/full/
+// @match		http://*.sximg.nl/img-*
+// @match		http://img.3xpla.net/img-*
+// @match		http://*.0img.net/?v=* 
+// @match		http://ss.movierls.net/image/*
+// @match		http://www.xxximagetpb.org/image/*
+// @match		http://www.pixsense.net/site/v/*
+// @match		http://imgoutlet.com/*.php
+// @match		http://imgoutlet.com/*/*.html
+// @match		http://*.pix.ac/image/*
+// @match		*://*.imgmak.com/image/*
+// @match		http://*.freephotohostin.com/img-*
+// @match		http://*.imgcat.pw/img-*
+// @match		http://*.levinpic.org/*.html
+// @match		https://www.sparrowpics.com/image/*
+// @match		http://*.imgmax.com/image/*
+// @match		http://lostpix.com/?v=*
+// @match		https://extraimago.com/image/*
+// @match		http://*.imgroute.com/?v=*
+// @match		http://www.joblo.com/hollywood-celebrities/hottie-profile/*/image-gallery/*.jpg
+// @match		*://extraimage.net/image/
+// @match		*://www.bellazon.com/main/attachment/*
+// @match		*://extraimage.net/image/*
+// @match		https://www.artstation.com/artwork/*
+// @match		http://bcy.net/illust/detail/*
+// @match		http://*.imgpics.nl/img-*
+// @match		http://*.imagexxx18.com/image/*
+// @match		http://*.imagepics.xyz/img-*
+// @match		*://*.imagesouls.net/img*
+// @match		*://postto.me/*
+// @match		http://*.imgskull.xyz/image/*
 // ==/UserScript==
 
 if (typeof unsafeWindow === "undefined")
@@ -817,10 +902,9 @@ if (typeof unsafeWindow === "undefined")
 	unsafeWindow = window;
 }
 
-var menuID;
 if (typeof GM_registerMenuCommand !== "undefined")
 {
-	menuID = GM_registerMenuCommand("Handy Image Configuration", cfg, "C");
+	GM_registerMenuCommand("Handy Image Configuration", cfg, "C");
 }
 
 if(window.location.href.lastIndexOf(window.location.hostname) + window.location.hostname.length + 1 == window.location.href.length)
@@ -994,9 +1078,12 @@ function makeworld()
 	case "hostimage.ru":
 	case "gluner.de":
 	case "imagebin.ca":
+	case "imgchili.net":
 	case "iceimg.com":
 	case "pics.tam.in.ua":
 	case "pixhst.com":
+	case "adultimages.xyz":
+	case "depic.me":
 		i = q('img');
 		break;
 	case "myceleb.net":
@@ -1013,6 +1100,7 @@ function makeworld()
 		i = q('a img:not([href,"' + iurl + '"])');
 		break;
 	case "savepic.org":
+	case "savepic.ru":
 		i = q('a img:not([src*="/images/"])');
 		break;
 	case "motherless.com":
@@ -1038,6 +1126,17 @@ function makeworld()
 	case "image-bugs.com":
 	case "imgclover.com":
 	case "picbee.pw":
+	case "demo.chevereto.com":	
+	case "img-365.com":
+	case "imgbonk.com":
+	case "imageyo.ga":
+	case "daily-img.com":
+	case "celebimg.com":
+	case "sfwimg.com":
+	case "img3x.com":
+	case "lostpic.net":
+	case "imgskull.xyz":
+		//chevereto 3.x
 		i = document.head.querySelector('link[rel="image_src"]');
 		if(i)
 		{
@@ -1053,7 +1152,6 @@ function makeworld()
 	case "gifyu.com":
 	case "picr.ws":
 	case "linkmypic.com":
-	case "celebimg.com":
 	case "sharepic.org":
 	case "zuly.de":
 	case "upload.vstanced.com":
@@ -1080,11 +1178,19 @@ function makeworld()
 	case "imagestorming.com":
 	case "pic.xtream-reallife.de":
 	case "ultraimg.com":
-	case "demo.chevereto.com":
 	case "ownimg.com":
 	case "safeimage.biz":
 	case "imagebam.com":
 	case "twitter.com":
+	case "imgextra.uk":
+	case "ss.movierls.net":
+	case "xxximagetpb.org":
+	case "pix.ac":
+	case "sparrowpics.com":
+	case "prnt.sc":
+	case "imgmax.com":
+	case "extraimago.com":
+	case "extraimage.net":
 		i = document.querySelector('meta[property="og:image"] , [name="og:image"]');
 		if(i)
 		{
@@ -1102,10 +1208,15 @@ function makeworld()
 		i = document.head.querySelector('meta[property="og:image"]');
 		if(i)
 		{
-			var f = document.head.querySelector('meta[name="twitter:card"]');
-			if((f && f.content == "gallery") || i.content.indexOf("logo") != -1)
+			var f = document.head.querySelector('meta[property="og:url"]');
+			var v = document.head.querySelector('meta[property="og:video"]');
+			if((f && (f.content.indexOf("/a/") != -1 || f.content.indexOf("/gallery/") != -1) ) || i.content.indexOf("/images/logo") != -1)
 			{
 				return;
+			}
+			else if(v)
+			{
+				i.src = v.content.replace('.mp4', '.gif');
 			}
 			else
 			{
@@ -1113,36 +1224,53 @@ function makeworld()
 			}
 		}
 		break;
-	case "prntscr.com":
-		i = document.querySelector('meta[property="og:image"]');
-		if(i)
-		{
-			i.src = i.content;
-			if(FireFox)
-			{
-				i.src = "http://img.prntscr.com/img?url=" + i.src;
-			}
-		}
+	case "ameblo.jp":
+		j=true;
+		i = q('img#imgItem');
 		break;
 	case "instagram.com":
-		find_text_in_scripts('display_src":"', '"');
-		if(i){i.src = i.src.replace(/\/s\d+x\d+?\//, '/');}
+		j = true;
+		find_text_in_scripts('display_src": "', '"');
+		if(i)
+		{
+			if(!find_text_in_scripts('is_video": true', ','))
+			{
+				i.src = i.src.replace(/\/p\d+x\d+?\//, '/');
+			}
+			else
+			{
+				i = null;
+			}
+		}
 		break;
 	case "flickr.com":
 	case "secure.flickr.com":
 		find_text_in_scripts('"url":"', '"', false, '"canComment"');
 		break;
+	case "500px.com":
+		find_text_in_scripts('"https_url":"', '"', false);
+		break;
+	case "artstation.com":
+		find_text_in_scripts('"image_url\\":\\"', '\\"', false);
+		break;
 	case "pixiv.net":
-		{
-			i = q("img.original-image");
-			if(i){i.src = i.dataset.src;}
-		}
+		j = true;
+		i = q("img.original-image");
+		if(i){i.src = i.dataset.src;}
 		break;
 	case "chan.sankakucomplex.com":
 		i = q('a[itemprop="contentUrl"]');
 		if(i)
 		{
 			i.src = i.href;
+		}
+		break;
+	case "bcy.net":
+		var f = document.querySelectorAll("img.detail_clickable")
+		if(f.length == 1)
+		{
+			i = f[0];
+			i.src = f[0].src.replace('/w650', '');
 		}
 		break;
 	case "imageshack.com":
@@ -1174,8 +1302,6 @@ function makeworld()
 			i.src = window.location.href.replace("#","");
 		}
 		break;
-	case "imageban.ru":
-	case "imageban.net":
 	case "imagesnake.com":
 	case "freebunker.com":
 	case "imagefruit.com":
@@ -1195,7 +1321,7 @@ function makeworld()
 	case "hostarea.de":
 	case "pixtreat.com":
 	case "imgshots.com":
-  	case "shareimgs.com":
+	case "shareimgs.com":
 		i = q('img#img_obj');
 		break;
 	case "pimpandhost.com":
@@ -1214,6 +1340,10 @@ function makeworld()
 	case "bayimg.com":
 	case "picgarage.net":
 		i = q('img#mainImage');
+		break;
+	case "imageban.ru":
+	case "imageban.net":
+		i = q('img[src*="' + iurl + '/out/"]');
 		break;
 	case "xup.in":
 		i = q('img[src*="/exec/"]');
@@ -1247,6 +1377,7 @@ function makeworld()
 	case "imagepool.in":
 	case "imgz.pw":
 	case "holdthemoan.net":
+	case "imgurx.net":
 		//i = q('img#iimg');
 		find_text_in_scripts("<img src='", "'");
 		break;
@@ -1256,8 +1387,12 @@ function makeworld()
 			i.src = i.src.replace('http://www.amateri.cz/orig.php?&img=', 'http://img2.amateri.cz/users/');
 		}
 		break;
+	case "pixsense.net":
+		find_text_in_scripts('"src","', '"');
+		break;
 	case "pix-x.net":
-		i = q('td img[src*="thumb"]');
+	case "imgclick.ru":
+		i = q('img[onclick*="mshow"]');
 		if(i){i.src = i.src.replace('-thumb', '');i.src = i.src.replace('img_thumb', 'img_full');}
 		break;
 	case "pics-money.ru":
@@ -1314,10 +1449,6 @@ function makeworld()
 	case "bilder-space.de":
 	case "imagesup.de":
 		i = q('img.picture');
-		break;
-	case "lostpic.net":
-		i = q('a[href*="/orig"]');
-		if(i){i.src = i.href;}
 		break;
 	case "pix.toile-libre.org":
 	case "photo-host.org":
@@ -1412,6 +1543,7 @@ function makeworld()
 	case "imgdone.com":
 	case "rupix.org":
 	case "gelbooru.com":
+	case "youhate.us":
 	case "greenpiccs.com":
 	case "imagelike.org":
 	case "balkanelite.org":
@@ -1453,6 +1585,7 @@ function makeworld()
 	case "imgmega.com":
 	case "pic.re":
 	case "imgdrive.co":
+	case "foxyimg.link":
 		i = q('input[type="submit"]');
 		dp=true;
 		if(i) 
@@ -1491,20 +1624,19 @@ function makeworld()
 	case "root-space.eu":
 	case "pokazal.ru":
 	case "mepic.ru":
-	case "imagehovel.com":
 	case "imgchili.mcdir.ru":
-	case "depic.me":
-	case "imagedoza.com":
+	case "imagepearl.com":
+	case "postto.me":
 		i = q('img[src*="' + iurl + '"]');
 		break;
-	case "postimg.org":
-		i = q('img[src*="' + iurl + '"]');
-		if(i && i.parentNode.href)
-		{
-			window.location.assign(i.parentNode.href);
-			return;
-		}
-		break;
+    case "postimg.org":
+    case "postimg.cc":
+        i = q('img[data-full]');
+        if(i)
+        {
+            i.src = i.getAttribute('data-full');
+        }
+        break;
 	case "ask.fm":
 	case "uaimage.com":
 		i = q('img[src*="' + iurl + '"][id]');
@@ -1522,7 +1654,9 @@ function makeworld()
 	case "pic4cash.ru":
 	case "imgmoney.ru":
 	case "fotooplata.ru":
-  	case "img24.org":
+	case "img24.org":
+	case "svetmonet.ru":
+	case "pic4share.ru":
 		var f = document.getElementsByTagName("button");
 		if(f.length)
 		{
@@ -1532,6 +1666,13 @@ function makeworld()
 		dp=true;
 		i = q('img[src*="/pic.jpeg"]');
 		break;
+	case "imgkings.com":
+	case "imagerar.com":
+		if(window.location.href.indexOf("img-") != -1)
+		{
+			window.location.href = window.location.href.replace("img-","img2-");
+			break;
+		}
 	case "freeimagehosting.net":
 	case "uploadhouse.com":
 	case "pixhub.eu":
@@ -1547,7 +1688,6 @@ function makeworld()
 		break;
 	case "images.orzzso.com":
 	case "picturepush.com":
-	case "500px.com":
 		i = q('img[src*="/photo/"]');
 		break;
 	case "keptarolo.hu":
@@ -1572,6 +1712,13 @@ function makeworld()
 	case "free-picload.de":
 		i = q('img[src*="pics/"]');
 		break;
+	case "imgtiger.org":
+		i = q('form');
+		if(i)
+		{
+			i.submit();
+			break;
+		}
 	case "imageeer.com":
 	case "cuteimg.cc":
 		i = q('input[type="button"]');
@@ -1580,22 +1727,32 @@ function makeworld()
 			i.click();
 			break;
 		}
-		dp=true;
 	case "imagebucks.biz":
-	case "imgrock.net":
-	case "imgtrex.com":
 	case "myimg.club":
-	case "imgview.net":
 	case "imgwel.com":
 	case "imgmonkey.com":
-	case "pic-maniac.com":
+	case "imgdragon.com":
+	case "imggold.org":
+	case "imgoutlet.com":
+	case "levinpic.org":
+	case "imgrock.net":
+	case "imgtown.net":
+	case "imgview.net":
 		j = true;
-		i = q("input[type='submit']:not([style='display:none;']):not([value*='eply'])");
 		dp=true;
-		if(i) 
+		var f = document.querySelectorAll("input[type='submit']")
+		if(f.length)
 		{
-			i.click();
-			break;
+			var n;
+			for(n=f.length-1; n >= 0; n--)
+			{
+				if(f[n].offsetWidth != 0 && f[n].value.indexOf("eply") == -1 && f[n].value.indexOf("Log") == -1)
+				{
+					f[n].removeAttribute("disabled");
+					f[n].click();
+					break;
+				}
+			}
 		}
 	case "casimages.com":
 	case "thebestpichost.com":
@@ -1607,6 +1764,7 @@ function makeworld()
 	case "pixpal.net":
 	case "imgpaying.com":
 	case "picexposed.com":
+	case "lostpix.com":
 		i = q('img[src*="/img/"]');
 		break;
 	case "imagenetz.de":
@@ -1668,24 +1826,37 @@ function makeworld()
 			i.src = i.src.substring(0,i.src.indexOf('"'));
 		}
 		break;
-	case "imgadult.com":
-		i = q('a.overlay_ad_link');
-		if(i)
-		{
-			var now = new Date();
-			var time = now.getTime();
-			time += 360 * 1000;
-			now.setTime(time);
-			document.cookie = 'user=' + 'true' + 
-				'; expires=' + now.toGMTString() + 
-				'; path=/';
-			window.location.href = window.location.pathname + "?imgContinue=1";
-			break;
-		}
 	case "imgbar.net":
 	case "olivepix.com":
 		i = q('img[src*="view/"]');
 		break;
+	case "imgking.co":
+		i = q('img[src*="uploads/"]');
+		if(i)	break;
+        	if(window.location.href.indexOf("imgs") != -1)
+		{
+			window.location.href = window.location.href.replace("imgs","imgv");
+			break;
+		}
+		if(window.location.href.indexOf("img3") != -1)
+		{
+			window.location.href = window.location.href.replace("img3","img4");
+			break;
+		}
+	case "imagesouls.net":
+		if(find_text_in_scripts('linkid="', '"', false))
+		{
+			window.location.href = i.src;
+			break;
+		}
+	case "imgadult.com":
+		j = true;
+		i = q('a.overlay_ad_link');
+		if(i)
+		{
+			i.click();
+			break;
+		}
 	case "imagepicsa.com":
 	case "imagefolks.com":
 	case "imgrill.com":
@@ -1722,25 +1893,46 @@ function makeworld()
 	case "funimg.net":
 	case "imageon.org":
 	case "nimplus.com":
+	case "imag.nimplus.com":
 	case "shareimg.fr":
-	case "imgking.co":
 	case "newimagepost.com":
 	case "imgease.re":
 	case "ipicsharer.com":
 	case "fapat.me":
 	case "imgbe.com":
 	case "fireimg.cc":
-	case "porno-pirat.ru":
-	case "thumbnailus.com":		
+	case "porno-pirat.ru":	
 	case "imgboom.net":
 	case "project-photo.net":
-  	case "img-planet.com":
-  	case "greasyimage.com":
+	case "img-planet.com":
+	case "greasyimage.com":
 	case "imgbb.net":
+	case "imgtea.com":
+	case "imgsen.se":
+	case "rapidimg.net":
+	case "imgflash.net":
+	case "sexyimagexxx.com":
+	case "imgtornado.com":
+	case "erimge.com":
+	case "img-pay.com":	
+	case "loftlm.ru":
+	case "lexiit.com":
+	case "tinizo.com":
+	case "xxxsparrow.com":
+	case "imgzizi.xyz":
+	case "imgpix.net":
+	case "freeimagehostin.com":
+	case "sximg.nl":
+	case "img.3xpla.net":
+	case "freephotohostin.com":
+	case "imgspot.org":
+	case "imgpics.nl":
+	case "imagepics.xyz":
 		dp=true;
 		var f = document.getElementsByTagName("input");
 		if(f.length)
 		{
+			f[f.length-1].removeAttribute("disabled");
 			f[f.length-1].click();
 		}
 	case "myhotimage.com":
@@ -1759,7 +1951,6 @@ function makeworld()
 	case "croftimage.com":
 	case "imagedecode.com":
 	case "imgfap.net":
-	case "imgspot.org":
 	case "sexyimg.eu":
 	case "madimage.org":
 	case "gogoimage.org":
@@ -1773,16 +1964,40 @@ function makeworld()
 	case "imagewow.eu":
 	case "imgdoggy.com":
 	case "fapic.me":
-	case "image.re":
 	case "uplimg.com":
 	case "imgstudio.org":
 	case "goimge.com":
 	case "imageho.me":
 	case "picsnova.net":
 	case "imgor.net":
-  	case "photolot.org":
+	case "photolot.org":
 	case "imgglobe.eu":
 	case "icezap.com":
+	case "imgtrial.com":
+	case "imgmag.co":
+	case "imgcredit.xyz":
+	case "dimtus.com":
+	case "imgcat.pw":
+		i = q('img[src*="' + iurl + '/upload/"]');
+		break;
+	case "thumbnailus.com":
+		i = q('input[type="submit"]');
+		dp=true;
+		if(i) 
+		{
+			i.click();
+			break;
+		}
+		i = q('img[src*="' + iurl + '/upload/"].centred');
+		break;
+	case "imgzulu.com":
+		i = q('button[type="submit"]');
+		dp=true;
+		if(i) 
+		{
+			i.click();
+			break;
+		}
 		i = q('img[src*="' + iurl + '/upload/"]');
 		break;
 	case "picspornfree.me":
@@ -1799,12 +2014,28 @@ function makeworld()
 	case "avenuexxx.com":
 	case "uploadimagex.com":
 	case "hostingkartinok.com":
+	case "bellazon":
 		i = q('img[src*="/upload"]');
 		break;
 	case "bababian.com":
 		i = q('img[src*="/upload"]');
 		if(i){i.src = i.src.replace('_500', '');}
 		break;
+	case "imgseeds.com":
+		i = q('input');
+		if(i)
+		{
+			i.click();
+			break;
+		}
+	case "imgtaxi.com":
+		j = true;
+		i = q("a.overlay_ad_link");
+		if(i)
+		{
+			i.click();
+			break;
+		}
 	case "imageontime.com":
 	case "imgwet.com":
 		j = true;
@@ -1825,6 +2056,7 @@ function makeworld()
 		break;
 	case "ruleimg.com":
 	case "imghit.com":
+	case "image.re":
 		i = q('img[alt="image"]');
 		break;
 	case "3xplanet.com":
@@ -1980,6 +2212,7 @@ function makeworld()
 	case "imgili.com":
 	case "imgcentral.com":
 	case "imageback.info":
+	case "imgroute.com":
 		i = q('img[src*="images/"]');
 		break;
 	case "use.com":
@@ -2035,6 +2268,9 @@ function makeworld()
 	case "all-poster.ru":
 	case "picturescream.asia":
 	case "imghost.us.to":
+	case "imgmak.com":
+	case "extraimage.net":
+	case "imagexxx18.com":
 		i = q('img[src*="/images/"]');
 		break;
 	case "intergranada.com":
@@ -2059,8 +2295,10 @@ function makeworld()
 	case "xenopix.com":
 		i = q('img[src*="/pix/"]');
 		break;
-	case "imgclick.net":
 	case "chronos.to":
+	case "imgmaid.net":
+	case "pic-maniac.com":
+	case "coreimg.net":
 		j = true;
 		i = q('input[type="submit"]');
 		dp=true;
@@ -2085,7 +2323,7 @@ function makeworld()
 	case "itmages.ru":
 	case "img.acianetmedia.com":
 	case "imagenpic.com":
-	case "zupmage.eu":
+	case "turbopix.fr":
 	case "pictureturn.com":
 	case "pixic.ru":
 	case "tuspics.net":
@@ -2097,8 +2335,21 @@ function makeworld()
 	case "imageshimage.com":
 	case "imagedax.net":
 	case "pornimagex.com":
+	case "sendpic.org":
+	case "imgtrex.com":
 		i = q('img[src*="/i/"]');
 		break;
+	case "imguniversal.com":
+	case "imgclick.net": // no submits
+        i = q("form input[type='submit'][value*='continue to image' i]");
+        j = true;
+        dp = true;
+        if(i)
+        {
+            i.click();
+        }
+        i = q("img.pic[src*='/i/'], img.pic[src*='/img/']");
+        break;
 	case "pixpipeline.com":
 		i = q('img[src*="/s/"]');
 		break;
@@ -2130,6 +2381,9 @@ function makeworld()
 		i = q('input[value*="' + iurl + ' img/"]');
 		if(i){i.src = i.value;}
 		break;
+	case "mixbase.net":
+		i = q('img[src*="media/storage/"]');
+		break;
 	case "image2you.ru":
 		i = q('img[src*="images/"]');
 		if(i){i.src = i.src.replace('2_', '');}
@@ -2155,7 +2409,6 @@ function makeworld()
 			break;
 		}
 	case "imgdrive.net":
-	case "imgtaxi.com":
 		j = true;
 		i = q("a.overlay_ad_link");
 		if(i)
@@ -2232,7 +2485,6 @@ function makeworld()
 	case "beeimg.com":	
 	case "1pics.ru":	
 	case "imgshow.me":
-	case "imgseeds.com":
 	case "ticklebytes.com":
 	case "youpicture.org":
 	case "zagruzitfoto.com":
@@ -2240,8 +2492,10 @@ function makeworld()
 	case "imgzap.com":
 	case "imgdrive.net":
 	case "crazyimg.com":
-	case "imgextra.uk":
 	case "extraimago.com":
+	case "ftop.ru":
+	case "porncomix.info":
+	case "indiansex.xyz":
 		i = q('img[src*="' + iurl + '/images/"]');
 		break;
 	case "shareimages.com":
@@ -2258,16 +2512,26 @@ function makeworld()
 	case "picangel.com":
 	case "imgsmile.com":
 	case "imgsay.com":
+	case "imgcool.net":
+	case "0img.net":
+		//IMGReserve  
 		j = true;
 		dp=true;
 		i = q('input[value="YES"]');
 		if(i){i.onclick();break;}
-	case "imgchili.net":
 	case "pic-upload.de":
 	case "pohrani.com":
 	case "shrani.najdi.si":
+	case "imageab.com":	
 		i = q('img[onclick*="(this"]');
 		break;
+	case "joblo.com":
+		i = q('img');
+		if(i)
+		{
+			i.src = "http://www.joblo.com/moviehotties/images/profile-gallery/orig" + window.location.href.substr(window.location.href.lastIndexOf("/"));
+		}
+		break; 
 	default: // dynamic subdomain
 		switch(iurl.substr(iurl.indexOf(".")+1))
 		{
@@ -2289,7 +2553,7 @@ function makeworld()
 			if(q('div.deviation-mlt-preview'))
 			{
 				i = q('a[href*="/download/"]');
-				if(i){i.src = i.href;}
+				if(i && i.href.indexOf(".zip?") == -1 && i.href.indexOf(".7z?") == -1 && i.href.indexOf(".rar?") == -1 && i.href.indexOf(".psd?") == -1 && i.href.indexOf("deviantart.com/users/outgoing?")== -1){i.src = i.href;}
 				else{i = q('img.dev-content-full');}
 			}
 			break;
@@ -2374,12 +2638,11 @@ function makeworld()
 				document.replaceChild(document.importNode(document.implementation.createHTMLDocument("").documentElement, true), document.documentElement);
 			}
 		}
-		if(!FireFox) // Then it is Chrome
+		var ext_list = ['webm', 'mp4', 'ogg'];
+		if (ext_list.indexOf(i.src.split('.').pop().toLowerCase()) >= 0)
 		{
-			if (typeof GM_unregisterMenuCommand !== "undefined" && menuID)
-			{
-				GM_unregisterMenuCommand(menuID);
-			}
+			console.warn("What we found is not an image");
+			return false;
 		}
 		clr_pgn();
 		ws();
@@ -2399,11 +2662,11 @@ function makeworld()
 function changecursor()
 {
 	i.style.margin = "auto";
-	if(!rescaled && (((i.naturalHeight / window.devicePixelRatio).toFixed() == window.innerHeight && (i.naturalWidth / window.devicePixelRatio).toFixed() == window.innerWidth) || ((i.naturalWidth / window.devicePixelRatio).toFixed() == window.innerWidth && (i.naturalWidth / window.devicePixelRatio).toFixed() == window.innerWidth))) // one img dimension is equal to screen and other is the same or less than the screen
+	if(!rescaled && (((i.naturalHeight / window.devicePixelRatio).toFixed() == window.innerHeight && (i.naturalWidth / window.devicePixelRatio).toFixed() <= window.innerWidth) || ((i.naturalHeight / window.devicePixelRatio).toFixed() <= window.innerHeight && (i.naturalWidth / window.devicePixelRatio).toFixed() == window.innerWidth))) // one img dimension is equal to screen and other is the same or less than the screen
 	{
 		i.style.cursor = "";
 	}
-	else if((i.naturalHeight / window.devicePixelRatio).toFixed() > window.innerHeight || (i.naturalWidth / window.devicePixelRatio).toFixed() > window.innerWidth)
+	else if((i.naturalHeight / window.devicePixelRatio).toFixed() > window.innerHeight || (i.naturalWidth / window.devicePixelRatio).toFixed() > window.innerWidth) // at least one img dimenion is bigger than the screen
 	{
 		if(rescaled)
 		{
@@ -2414,7 +2677,7 @@ function changecursor()
 		{
 			i.style.cursor = "-moz-zoom-out";
 			i.style.cursor = "-webkit-zoom-out";
-			if((i.naturalHeight / window.devicePixelRatio).toFixed() > window.innerHeight) // chrome bug fuuuuu
+			if((i.naturalHeight / window.devicePixelRatio).toFixed() > window.innerHeight) // image pushing out-of-screen fix
 			{
 				i.style.margin = "0px auto";
 			}
